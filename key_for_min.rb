@@ -11,7 +11,6 @@
 def key_for_min_value(name_hash)
   key_arr = []
   value_arr = []
-  @min_key = ""key_arr[0]""
   
   if name_hash.length == 0 
     return nil 
@@ -20,7 +19,7 @@ def key_for_min_value(name_hash)
       key_arr << key 
       value_arr << value 
     end 
-    
+    @min_key = key_arr[0]
     comparator = value_arr[0]
     counter = 1
     while counter < value_arr.length 
@@ -33,7 +32,7 @@ def key_for_min_value(name_hash)
       else
         counter += 1
       end 
-    end 
-  end
+    end
   return @min_key
+  end
 end
