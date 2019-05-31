@@ -11,7 +11,7 @@
 def key_for_min_value(name_hash)
   key_arr = []
   value_arr = []
-  min_key
+  min_key = ""
   
   if name_hash.length == 0 
     return nil 
