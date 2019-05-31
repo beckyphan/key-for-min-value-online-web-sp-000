@@ -24,8 +24,12 @@ def key_for_min_value(name_hash)
     if counter < value_arr.length 
       if value_arr[counter] < value_arr[counter + 1]
         min_key = key_arr[counter]
-      elsif value_arr[counter + 1] == error 
-        
-    
+      elsif value_arr[counter] > value_arr[counter + 1]
+        min_key = key_arr[counter + 1]
+      else
+        return min_key
+      end 
+    end 
+  end 
     
 end
