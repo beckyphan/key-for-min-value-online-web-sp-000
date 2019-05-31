@@ -28,11 +28,10 @@ def key_for_min_value(name_hash)
         counter += 1
       elsif comparator > value_arr[counter]
         min_key = key_arr[counter]
-        counter += 1
-      elsif comparator < value_arr[counter]
+        comparator = 
         counter += 1
       else
-        return min_key
+        counter += 1
       end 
     end 
   end 
