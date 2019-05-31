@@ -33,8 +33,7 @@ def key_for_min_value(name_hash)
       else
         counter += 1
       end 
-      min_key
+      return min_key
     end 
   end 
-    
 end
