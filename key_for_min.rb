@@ -22,7 +22,7 @@ def key_for_min_value(name_hash)
     end 
     
     comparator = value_arr[0]
-    counter = 0
+    counter = 1
     while counter < value_arr.length 
       if comparator == value_arr[counter]
         counter += 1
