@@ -21,11 +21,13 @@ def key_for_min_value(name_hash)
       value_arr << value 
     end 
     counter = 0
-    if counter < value_arr.length 
+    while counter < value_arr.length 
       if value_arr[counter] < value_arr[counter + 1]
         min_key = key_arr[counter]
+        counter += 1
       elsif value_arr[counter] > value_arr[counter + 1]
         min_key = key_arr[counter + 1]
+        counter += 1
       else
         return min_key
       end 
