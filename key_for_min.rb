@@ -20,7 +20,10 @@ def key_for_min_value(name_hash)
       value_arr << value 
     end 
     
-    while 
+    counter = 0
+    
+    while counter < value_arr.length 
+      
     
     
 end
